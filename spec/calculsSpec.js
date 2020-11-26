@@ -13,5 +13,10 @@ describe("Calculs test", function() {
           expect(calculs.multiplier()).toBe(operande1 * operande2);
 
       });
+      it("This test should fail", function() { 
+
+        expect(calculs.multiplier()).toBe(operande1 - operande2);
+
+    });
     });
   });
