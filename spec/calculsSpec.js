@@ -8,15 +8,15 @@ describe("Calculs test", function() {
     describe("Test Calculs methods", function() {
       //This is testing that http GET works
   
-      it("Checks if multiplier have the right calc", function() { 
+        it("Checks if multiplier have the right calc", function() { 
 
-          expect(calculs.multiplier()).toBe(operande1 * operande2);
+            expect(calculs.multiplier()).toBe(operande1 * operande2);
 
-      });
-      it("This test should fail", function() { 
+        });
+        it("This test should fail", function() { 
 
-        expect(calculs.multiplier()).toBe(operande1 - operande2);
+            expect(calculs.multiplier()).not.toBe(operande1 - operande2);
 
-    });
+        });
     });
   });
